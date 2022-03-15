@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'Favorit';
+  src: url('../webfonts/Favorit_Regular.ttf') format('TrueType');
+}
+
+h1 {
+  font-family: 'Cormorant';
+  font-size: 100px;
+  text-transform: none;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(
+    145deg,
+    #76e650 0%,
+    #f9d649 15%,
+    #f08e35 35%,
+    #ef4a4f 50%,
+    #e540b3 70%,
+    #5070e5 85%,
+    #6e34ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  text-transform: none;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 25px;
+  margin: 0;
+  line-height: ;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: none;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  line-height: ;
+  padding-top: 1%;
+}
+
+body {
+  font-family: "Lato";
+  justify-content: center;
+  padding: 10px;
+  background-color: #F7ECDE;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #54BAB9;
+}
+
+a:hover {
+  color: #151D3B;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.card-white {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+  padding: 10px;
+}
+.btn-blue {
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.btn-blue:hover {
+  background-color: black;
+  color: white;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+  color: black;
+}
+
+@media (max-width: 700px){
+
+  section {
+    padding-top: 30px;
+    margin-top: 0px;
+  }
+
+  body{
+  	padding-left: 0px;
+  	padding-right: 0px;
+  }
+
+   h1 {
+    font-size: 20vw;
+  }
+
+   h2 {
+    font-size: 5vw;
+    padding-top: 10px;
+  }
+
+  h3 {
+    font-size: 4vw;
+    padding-top: 10px;
+  }
+
+  body {
+    padding-top: 0px;
+    font-size: 16px;
+  }
+
+footer {
+  position: fixed;
+  bottom: 100px;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+body{
+  padding: 1.5rem;
+}
+
+a {
+  border-bottom: .0625em solid rgba(128,128,128,.3);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 calc(100% + .0625em);
+  background-repeat: no-repeat;
+  background-size: 0 .0625em;
+	text-decoration: none;
+	transition: background-size .2s;
+  color: blue;
+
+	&:active,
+	&:focus,
+	&:hover {
+    background-size: 100% .0625em;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
